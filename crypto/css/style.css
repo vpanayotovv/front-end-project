@@ -99,6 +99,15 @@ body {
   padding: 10rem 0;
 }
 
+.layout_padding {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.color-text{
+  color:#ff880e !important;
+}
+
 footer{
   background-color: #383838;
   padding: 1rem 2rem 3rem;
@@ -140,6 +149,26 @@ ul.social li a:hover{
 }
 .fixed-background{
   text-transform: uppercase;
+}
+
+.btn-info-about{
+  width: 195px;
+  height: 55px;
+  float: left;
+  text-align: center;
+  line-height: 55px;
+  border: solid #ff880e 1px;
+  font-size: 18px;
+  margin-top: 10px;
+  background: #fff;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+.btn-info-about:hover{
+  color: #ff880e;
+  text-decoration: none;
 }
 
 /* Devices under 1199px (xl) */
