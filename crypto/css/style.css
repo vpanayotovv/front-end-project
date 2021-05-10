@@ -1,7 +1,8 @@
 body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-  color:black;
+  color:#2F4858
+  ;
 }
 
 
@@ -26,7 +27,8 @@ body {
 }
 
 .nav-link {
-  color: black !important;
+  color: #2F4858
+  !important;
 }
 
 .nav-link.active,
@@ -74,10 +76,13 @@ body {
 .border-primary{
   border-top: .2rem solid #ff880e !important;
 }
-
+.btn-warning{
+  background-color: #ff880e;
+  font-weight: 600;
+}
 .btn-warning:hover{
   background-color: #ff880e;
-  border-color: #ff880e;
+  opacity: 50%;
 }
 
 .inner-img{
@@ -86,7 +91,7 @@ body {
 }
 
 .fixed{
-  background-image: url('/img/b1.png');
+  background-image: url('/img/b1.jpg');
   position: fixed;
 }
 
@@ -122,6 +127,19 @@ ul.social li a{
 
 ul.social li a:hover{
   opacity: 50%;
+}
+
+.fixed-background h1{
+  font-size: 2.8rem;
+  text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+  
+}
+.fixed-background h3{
+  font-size: 1.2rem;
+  text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+.fixed-background{
+  text-transform: uppercase;
 }
 
 /* Devices under 1199px (xl) */
