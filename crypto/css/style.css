@@ -94,6 +94,36 @@ body {
   padding: 10rem 0;
 }
 
+footer{
+  background-color: #383838;
+  padding: 1rem 2rem 3rem;
+}
+
+footer img{
+  height: 3.5rem;
+  margin:1.5rem auto;
+}
+
+ul.social{
+  list-style-type: none;
+  display:flex;
+  max-width: 16rem;
+  margin:0 auto;
+}
+
+ul.social li{
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+ul.social li a{
+  color: white;
+}
+
+ul.social li a:hover{
+  opacity: 50%;
+}
+
 /* Devices under 1199px (xl) */
 @media (max-width: 1199.98px) {
 
