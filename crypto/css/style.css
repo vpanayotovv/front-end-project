@@ -152,19 +152,22 @@ ul.social li a:hover{
 }
 
 .btn-info-about{
-  width: 195px;
-  height: 55px;
+  width: 150px;
+  height: 45px;
   float: left;
   text-align: center;
-  line-height: 55px;
+  line-height: 45px;
   border: solid #ff880e 1px;
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 10px;
   background: #fff;
-  font-weight: 500;
+  font-weight: 600;
   box-sizing: border-box;
   text-decoration: none;
   color: black;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  font-family: inherit;
 }
 .btn-info-about:hover{
   color: #ff880e;
