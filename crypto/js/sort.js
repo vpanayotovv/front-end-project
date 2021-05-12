@@ -13,6 +13,8 @@ function sortTable(table, column, asc = true) {
 
             const firstNum = parseFloat(Number(aColText));
             const secondNum = parseFloat(Number(bColText));
+        
+            console.log(firstNum);
 
             return firstNum > secondNum ? (1 * dirModifier) : (-1 * dirModifier); ;
 
