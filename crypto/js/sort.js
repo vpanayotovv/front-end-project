@@ -7,7 +7,21 @@ function sortTable(table, column, asc = true) {
 
         const aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
         const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
-        return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+
+        const regex = /[\d]+/gm;
+        if (regex.test(aColText) == true) {
+
+            const firstNum = parseFloat(Number(aColText));
+            const secondNum = parseFloat(Number(bColText));
+
+            return firstNum > secondNum ? (1 * dirModifier) : (-1 * dirModifier); ;
+
+        } else {
+
+            return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+        }
+
+
 
     });
 
