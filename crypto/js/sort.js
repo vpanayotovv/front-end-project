@@ -9,17 +9,13 @@ function sortTable(table, column, asc = true) {
         const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
 
         const regex = /[\d]+/gm;
+        
         if (regex.test(aColText) == true) {
-
             const firstNum = parseFloat(Number(aColText));
             const secondNum = parseFloat(Number(bColText));
-        
-            console.log(firstNum);
-
             return firstNum > secondNum ? (1 * dirModifier) : (-1 * dirModifier); ;
 
         } else {
-
             return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
         }
 
