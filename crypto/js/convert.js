@@ -36,7 +36,7 @@ btnElement.addEventListener('click', () => {
 
     }else{
 
-        let result = 'Fill all fileds properly'
+        let result = 'Fill all fileds properly';
         document.getElementById('Converted').innerText = result;
 
     }
