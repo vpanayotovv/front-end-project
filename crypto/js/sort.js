@@ -4,7 +4,6 @@ function sortTable(table, column, asc = true) {
     const rows = Array.from(tBody.querySelectorAll("tr"));
 
     const sortedRows = rows.sort((a, b) => {
-
         const aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
         const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
 
@@ -14,13 +13,9 @@ function sortTable(table, column, asc = true) {
             const firstNum = parseFloat(Number(aColText));
             const secondNum = parseFloat(Number(bColText));
             return firstNum > secondNum ? (1 * dirModifier) : (-1 * dirModifier);
-
         } else {
             return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
         }
-
-
-
     });
 
     while (tBody.firstChild) {

@@ -1,4 +1,3 @@
-
 let btnElement = document.getElementById('cBtn');
 
 let rates = {
@@ -37,7 +36,7 @@ btnElement.addEventListener('click', () => {
 
     }else{
 
-        let result = "Have to fill all fileds properly"
+        let result = 'Have to fill all fileds proper'
         document.getElementById('Converted').innerText = result;
 
     }
