@@ -1,6 +1,6 @@
-let btnElement = document.getElementById('cBtn');
+const btnElement = document.getElementById('cBtn');
 
-let rates = {
+const rates = {
 
     "BTC": 56872.06,
     "ETH": 4286.33,
@@ -21,22 +21,23 @@ let rates = {
 }
 
 btnElement.addEventListener('click', () => {
-    let base = document.getElementById('Base').value;
-    let out = document.getElementById('Output').value;
-    let amount = document.getElementById('Amount').value;
+    const base = document.getElementById('Base').value;
+    const out = document.getElementById('Output').value;
+    const amount = document.getElementById('Amount').value;
 
     let finalValue = rates;
     finalValue = finalValue[base] * Number(amount);
 
+    let result = '';
 
     if (Number(amount)) {
 
-        let result = `Converted Amount of ${amount} ${base} is ${finalValue} ${out}`;
+        result = `Converted Amount of ${amount} ${base} is ${finalValue} ${out}`;
         document.getElementById('Converted').innerText = result;
 
     }else{
 
-        let result = 'Fill all fileds properly';
+        result = 'Fill all fileds properly';
         document.getElementById('Converted').innerText = result;
 
     }
