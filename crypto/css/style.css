@@ -269,9 +269,8 @@ ul.social li a:hover{
 .loader {
     display: block;
     flex-wrap: wrap;
-    width: 250px;
+    width: 20rem;
     height: auto;
-    -webkit-transform-style: preserve-3d;
 }
 
 .loader img {
