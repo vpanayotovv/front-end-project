@@ -35,6 +35,6 @@ document.querySelectorAll(".sortable th").forEach(headerCell => {
         const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
         const currAsc = headerCell.classList.contains("th-sort-asc");
 
-        sortTable(tableElement, headerIndex, !currAsc)
+        sortTable(tableElement, headerIndex, !currAsc);
     });
 });
