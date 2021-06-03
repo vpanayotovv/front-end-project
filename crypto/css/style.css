@@ -282,3 +282,9 @@ ul.social li a:hover{
   text-align: center;
   box-sizing: content-box;
 }
+
+.short{
+  color: black;
+  font-weight: bold;
+  padding-right: 3px;
+}
