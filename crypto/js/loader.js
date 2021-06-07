@@ -1,4 +1,4 @@
-(function ($) {
+$(function(){
 
     $(window).on('load', function () {
         $('.preloader').fadeOut();
@@ -6,5 +6,5 @@
         $('body').delay(450).css({ 'overflow': 'visible' });
     });
 
-}(jQuery));
+});
 
