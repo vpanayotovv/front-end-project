@@ -288,9 +288,7 @@ ul.social li a:hover{
   font-weight: bold;
   padding-right: 3px;
 }
-.col-md-3:hover{
-  transform: translateY(2px);
-}
+
 #exchange{
   background-color: #fff;
  border: 2px solid #ecf0f1;
