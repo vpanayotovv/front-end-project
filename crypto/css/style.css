@@ -306,3 +306,9 @@ ul.social li a:hover{
  transform: rotate(90deg);
  margin-left: 200px;
 }
+
+@media screen and (min-width: 676px) {
+  .modal-dialog {
+    max-width: 700px;
+  }
+}
