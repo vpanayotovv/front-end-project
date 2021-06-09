@@ -2,6 +2,8 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
   color:#2F4858;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -309,4 +311,12 @@ ul.social li a:hover{
   .modal-dialog {
     max-width: 700px;
   }
+}
+
+.boldText{
+  font-weight: 800;
+}
+
+.grafics{
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
 }
