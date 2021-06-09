@@ -32,7 +32,6 @@ function updatePrices() {
         let nameElement = price.parentElement.parentElement.children[1].textContent;
         let nameArray = nameElement.split(' ');
         let name = nameArray[nameArray.length - 1];
-        console.log(rates[name]);
         price.textContent = rates[name].toFixed(4);
     }
 };
