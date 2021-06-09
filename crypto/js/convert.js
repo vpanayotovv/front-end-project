@@ -8,8 +8,9 @@ btnElement.addEventListener('click', () => {
     let result = '';
     let finalValue = 0;
 
-    if (Number(amount)) {
-
+    if (Number(amount) && base != '' && out != '') {
+        $('#Converted').css({"color": "black"});
+        
         $.ajax({
             type: "GET",
             url: `http://rest.coinapi.io/v1/exchangerate/${base}/${out}`,
@@ -26,14 +27,13 @@ btnElement.addEventListener('click', () => {
         });
 
 
-
     } else {
+        $('#Converted').css({"color": "red"});
 
-        result = 'Fill all fileds properly';
+        result = 'Must fill all fileds properly';
         document.getElementById('Converted').innerText = result;
-
+        
     }
-
 });
 
 const exchangeElement = document.getElementById('exchange');
